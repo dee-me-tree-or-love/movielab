@@ -1,8 +1,8 @@
 from domain import DOMAIN
 
-# mongo connection string 
+# mongo connection string
 # see https://docs.mongodb.com/manual/reference/connection-string/
-MONGO_URI = 'mongodb://localhost:27017/movielab-info'
+MONGO_URI = 'mongodb://127.0.0.0:27017/movielab-info'
 
 
 # methods allowed at the resource (collection) endpoint
@@ -24,9 +24,9 @@ X_DOMAINS = '*'
 DEBUG = True
 
 
-
 def main():
-  print(DOMAIN)
+    print(DOMAIN)
+
 
 if __name__ == '__main__':
-  main()
+    main()
