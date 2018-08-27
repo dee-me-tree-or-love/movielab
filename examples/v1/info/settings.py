@@ -19,7 +19,7 @@ ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
 # IF-MATCH for concurrency and integrity control
 # if set to true, each mutating request needs to be validated against an ETAG
 # otherwise, no concurency and integrity control
-# see http://python-eve.org/features.html#data-integrity-and-concurrency-control
+# http://python-eve.org/features.html#data-integrity-and-concurrency-control
 IF_MATCH = True
 
 # CORS support
