@@ -11,6 +11,16 @@ services:
       environment:
         ME_CONFIG_MONGODB_ADMINUSERNAME: root
         ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+    lookup:
+      build: ./lookup/
+      ports:
+          - '8000:8000'
+      volumes:
+          - ./info/:/code
+      depends_on:
+          - info
+
     mongo:
       image: mongo:3.6
       restart: always

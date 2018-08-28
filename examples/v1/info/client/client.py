@@ -35,9 +35,10 @@ def post_movies():
 def is_successful_response(response):
     return response.status_code == 200
 
+
 def print_movie_information(movie):
     print('{}, {}'.format(movie['title'], movie['_id']))
-    
+
 
 def print_movies_information(movies):
     print('{} movies:'.format(len(movies)))
@@ -65,9 +66,8 @@ def get_movie(id):
 
 
 def get_movies_by_one(movies):
-    for movie in movies: 
+    for movie in movies:
         get_movie(movie['_id'])
-
 
 
 def main():
@@ -75,7 +75,6 @@ def main():
     post_movies()
     movies = get_movies()
     get_movies_by_one(movies)
-
 
 
 if __name__ == '__main__':

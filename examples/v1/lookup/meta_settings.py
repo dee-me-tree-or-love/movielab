@@ -3,7 +3,7 @@ FLASK_RUN_PORT = 8080
 
 
 def get_start_command():
-    app = FLASK_APP or 'lookup/app.py'
+    app = FLASK_APP or 'lookup/app/app.py'
     port = FLASK_RUN_PORT or 8000
     command = (
         'export FLASK_APP={}' +

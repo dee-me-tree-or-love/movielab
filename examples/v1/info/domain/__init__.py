@@ -2,5 +2,5 @@ from .movies import movies
 
 
 DOMAIN = {
-  'movies': movies
+    'movies': movies
 }
