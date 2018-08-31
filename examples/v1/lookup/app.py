@@ -13,7 +13,7 @@ def get_movie_from_our_information_api(movie_id):
 
 
 @app.route("/movies/external/<movie_id>")
-def get_movie_from_external_information_api():
+def get_movie_from_external_information_api(movie_id):
     return "Hello World!"
 
 
