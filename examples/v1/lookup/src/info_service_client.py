@@ -14,4 +14,3 @@ class InfoServiceClient(HttpServiceClient):
         if super().is_successful_response(response):
             return response.json()
         return {}
-
